@@ -8,409 +8,146 @@ void print(char* string) {
     for(ind = 0; ind < 3; ++ind) {
         for(ctr = 0; ctr < len; ++ctr) {
             ptr = string[ctr];
-            switch(ptr) {
-            case 'A':
-                switch(ind) {
-                case 0:
-                    printf(" /\\ ");
-                    break;
-                case 1:
-                    printf("/~~\\ ");
-                    break;
-                case 2:
-                    printf("      ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'B':
-                switch(ind) {
-                case 0:
-                    printf(" __ ");
-                    break;
-                case 1:
-                    printf("|__)");
-                    break;
-                case 2:
-                    printf("|__)");
-                    break;
-                
-                default:
-                    break;
-                }
-                break;
-            case 'C':
-                switch(ind) {
-                case 0:
-                    printf(" __ ");
-                    break;
-                case 1:
-                    printf("/  ` ");
-                    break;
-                case 2:
-                    printf("\\__, ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'D':
-                switch(ind) {
-                case 0:
-                    printf(" __  ");
-                    break;
-                case 1:
-                    printf("|  \\ ");
-                    break;
-                case 2:
-                    printf("|__/ ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'E':
-                switch(ind) {
-                case 0:
-                    printf(" ___ ");
-                    break;
-                case 1:
-                    printf("|__  ");
-                    break;
-                case 2:
-                    printf("|___ ");
-                    break; 
-                
-                default:
-                    break;
-                }
-                break;
-            case 'F':
-                switch(ind) {
-                case 0:
-                    printf(" ___ ");
-                    break;
-                case 1:
-                    printf("|__  ");
-                    break;
-                case 2:
-                    printf("|    ");
-                    break;
-
-                default:
-                    break;
-                }
-                break;
-            case 'G':
-                switch(ind) {
-                case 0:
-                    printf(" __   ");
-                    break; 
-                case 1:
-                    printf("/ _`  ");
-                    break;
-                case 2:
-                    printf("\\__> ");
-                    break;
-    
-                default:
-                    break;
-                }
-                break;
-            case 'H':
-                switch(ind) {
-                case 0:
-                    printf("|__| ");
-                    break;
-                case 1:
-                    printf("|  | ");
-                    break;
-                case 2:
-                    printf("     ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'I':
-                switch(ind) {
-                case 0:
-                    printf(" | ");
-                    break;
-                case 1:
-                    printf(" | ");
-                    break;
-                case 2:
-                    printf("   ");
-                    break;  
-                default:
+            switch(ptr) {        
+		case 'A': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf(" /\\  "); break;
+            case 2: printf("/~~\\ "); break;
+        } break;
+        case 'B': switch(ind) {
+            case 0: printf(" __  "); break;
+            case 1: printf("|__) "); break;
+            case 2: printf("|__) "); break;
+        } break;
+        case 'C': switch(ind) {
+            case 0: printf("  __  "); break;
+            case 1: printf("/  ` "); break;
+            case 2: printf("\\__, "); break;
+        } break;
+        case 'D': switch(ind) {
+            case 0: printf(" __ "); break;
+            case 1: printf("|  \\ "); break;
+            case 2: printf("|__/ "); break;
+        } break;
+        case 'E': switch(ind) {
+            case 0: printf(" ___ "); break;
+            case 1: printf("|__  "); break;
+            case 2: printf("|___ "); break;
+        } break;
+        case 'F': switch(ind) {
+            case 0: printf(" ___ "); break;
+            case 1: printf("|__  "); break;
+            case 2: printf("|    "); break;
+        } break;
+        case 'G': switch(ind) {
+            case 0: printf(" __  "); break;
+            case 1: printf("/ _` "); break;
+            case 2: printf("\\__> "); break;
+        } break;
+        case 'H': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|__| "); break;
+            case 2: printf("|  | "); break;
+        } break;
+        case 'I': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|    "); break;
+            case 2: printf("|    "); break;
+        } break;
+        case 'J': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("   | "); break;
+            case 2: printf("\\__/ "); break;
+        } break;
+        case 'K': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|__/ "); break;
+            case 2: printf("|  \\ "); break;
+        } break;
+        case 'L': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|    "); break;
+            case 2: printf("|___ "); break;
+        } break;
+        case 'M': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|\\/| "); break;
+            case 2: printf("|  | "); break;
+        } break;
+        case 'N': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|\\ | "); break;
+            case 2: printf("| \\| "); break;
+        } break;
+        case 'O': switch(ind) {
+            case 0: printf(" __  "); break;
+            case 1: printf("/  \\ "); break;
+            case 2: printf("\\__/ "); break;
+        } break;
+        case 'P': switch(ind) {
+            case 0: printf(" __  "); break;
+            case 1: printf("|__) "); break;
+            case 2: printf("|    "); break;
+        } break;
+        case 'Q': switch(ind) {
+            case 0: printf(" __  "); break;
+            case 1: printf("/  \\ "); break;
+            case 2: printf("\\__X "); break;
+        } break;
+        case 'R': switch(ind) {
+            case 0: printf(" __  "); break;
+            case 1: printf("|__) "); break;
+            case 2: printf("|  \\ "); break;
+        } break;
+        case 'S': switch(ind) {
+            case 0: printf(" __  "); break;
+            case 1: printf("/__` "); break;
+            case 2: printf(".__/ "); break;
+        } break;
+        case 'T': switch(ind) {
+            case 0: printf(" ___ "); break;
+            case 1: printf("  |  "); break;
+            case 2: printf("  |  "); break;
+        } break;
+        case 'U': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|  | "); break;
+            case 2: printf("\\__/ "); break;
+        } break;
+        case 'V': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("\\  / "); break;
+            case 2: printf(" \\/  "); break;
+        } break;
+        case 'W': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("|  | "); break;
+            case 2: printf("|/\\| "); break;
+        } break;
+        case 'X': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("\\_/  "); break;
+            case 2: printf("/ \\  "); break;
+        } break;
+        case 'Y': switch(ind) {
+            case 0: printf("     "); break;
+            case 1: printf("\\ /  "); break;
+            case 2: printf(" |   "); break;
+        } break;
+        case 'Z': switch(ind) {
+            case 0: printf("__   "); break;
+            case 1: printf(" /   "); break;
+            case 2: printf("/_   "); break;
+        } break;
+        case ' ': switch(ind) {
+            case 0: printf("      "); break;
+        } break;
+        default:
                     break;
                 }
-                break;
-            case 'J':
-                switch(ind) {
-                case 0:
-                    printf("    | ");
-                    break;
-                case 1:
-                    printf("\\__/ ");
-                    break;
-                case 2:
-                    printf("      ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'K':
-                switch(ind) {
-                case 0:
-                    printf("|__/ ");
-                    break;
-                case 1:
-                    printf("|  \\ ");
-                    break;
-                case 2:
-                    printf("      ");
-                    break; 
-                default:
-                    break;
-                }
-                break;
-            case 'L':
-                switch(ind) {
-                case 0:
-                    printf("|    ");
-                    break;
-                case 1:
-                    printf("|___ ");
-                    break;
-				case 2:
-                    printf("     ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'M':
-                switch(ind) {
-                case 0:
-                    printf("|\\/|");
-                    break;
-                case 1:
-                    printf("|  | ");
-                    break;
-               case 2:
-                    printf("     ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'N':
-                switch(ind) {
-                case 0: 
-                    printf("|\\ | ");
-                    break;
-                case 1:
-                    printf("| \\| ");
-                    break;
-            	case 2:
-                    printf("      ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'O':
-                switch(ind) {
-                case 0:
-                    printf(" __  ");
-                    break; 
-                case 1:
-                    printf("/  \\ ");
-                    break;
-                case 2:
-                    printf("\\__/ ");
-                    break;
-                
-                default:
-                    break;
-                }
-                break;
-            case 'P':
-                switch(ind) {
-                case 0:
-                    printf(" __ ");
-                    break;
-                case 1:
-                    printf("|__) ");
-                    break;
-                case 2:
-                    printf("|    ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'Q':
-                switch(ind) {
-                case 0:
-                    printf(" __   ");
-                    break;
-                case 1:
-                    printf("/  \\ ");
-                    break;
-                case 2:
-                    printf("\\__X ");
-                    break;
-                
-                default:
-                    break;
-                }
-                break;
-            case 'R':
-                switch(ind) {
-                case 0:
-                    printf(" __  ");
-                    break;
-                case 1:
-                    printf("|__) ");
-                    break;
-                case 2:
-                    printf("|  \\ ");
-                    break;
-    
-                default:
-                    break;
-                }
-                break;
-            case 'S':
-                switch(ind) {
-                case 0:
-                    printf(" __ ");
-                    break;
-                case 1:
-                    printf("/__` ");
-                    break;
-                case 2:
-                    printf(".__/ ");
-                    break;
-                
-                default:
-                    break;
-                }
-                break;
-            case 'T':
-                switch(ind) {
-                case 0:
-                    printf(" ___ ");
-                    break;
-                case 1:
-                    printf("  | ");
-                    break;
-                case 2:
-                    printf("  | ");
-                    break;
-                
-                default:
-                    break;
-                }
-                break;
-            case 'U':
-                switch(ind) {
-                case 0:
-                    printf("|  | ");
-                    break;
-                case 1:
-                    printf("\\__/ ");
-                    break;
-                case 2:
-                    printf("      ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'V':
-                switch(ind) {
-                case 0:
-                    printf("\\  / ");
-                    break;
-                case 1:
-                    printf(" \\/  ");
-                    break;
-            	case 2:
-                    printf("      ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'W':
-                switch(ind) {
-                case 0:
-                    printf(" |  |  ");
-                    break;
-                case 1:
-                    printf(" |/\\| ");
-                    break;
-                case 2:
-                    printf("       ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'X':
-                switch(ind) {
-                case 0:
-                    printf(" \\_/ ");
-                    break;
-                case 1:
-                    printf(" / \\ ");
-                    break;
-                case 2:
-                    printf("      ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'Y':
-                switch(ind) {
-                case 0:
-                    printf(" \\ / ");
-                    break;
-                case 1:
-                    printf("  |  ");
-                    break;
-                case 2:
-                    printf("     ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            case 'Z':
-                switch(ind) {
-                case 0:
-                    printf("  __  ");
-                    break;
-                case 1:
-                    printf("  /  ");
-                    break;
-                case 2:
-                    printf("  /_  ");
-                    break;
-                default:
-                    break;
-                }
-                break;
-            default:
-                break;
-            }
+               
+            
+            
         }
         printf("\n");
     }
@@ -456,3 +193,4 @@ int main(int argc, char *argv[]) {
     }
     return(0);
 }
+       
